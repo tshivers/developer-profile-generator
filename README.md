@@ -1,29 +1,39 @@
 # developer-profile-generator
 
-## DESCRIPTION
+## DESCRIPTION:
 
 ### Create a command-line application that dynamically generates a PDF profile from a GitHub username. The application will be invoked with the following command:
 
 #### node index.js
 
-## INSTRUCTIONS
+## INSTALLATION and REQUIREMENTS:
+
+### Installation: Node.js
+
+### Requirements: NPM Packages fs, inquirer, axios, puppeteer, and pdf-creator-node 
+
+## Usage: Employee profile generator
+
+## INSTRUCTIONS:
 
 ### The user will be prompted for a favorite color, which will be used as the background color for cards.
 
-### The PDF will be populated with the following:
+### The PDF will then populate with the following:
 
-#### Profile image
-#### user name
+#### Profile Image
+#### User Name
 
-### Links to the following:
+### PDF will link to the following:
 
-##### User location via Google Maps
-##### User GitHub profile
-##### User blog
+##### User's Location via Google Maps
+##### User's GitHub Profile
+##### User's Blog
 
 
-### User bio
-### Number of public repositories
-### Number of followers
-### Number of GitHub stars
-### Number of users following
+#### User's Bio
+#### Public Repositories
+#### Followers
+#### GitHub Stars
+#### Who the User is Following
+
+## Credits:
