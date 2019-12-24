@@ -26,6 +26,8 @@ const colors = {
 };
 
 function generateHTML(data) {
+  console.log("DATA")
+  console.log(data)
   return `<!DOCTYPE html>
 <html lang="en">
    <head>
@@ -169,11 +171,57 @@ function generateHTML(data) {
           body { 
             zoom: .75; 
           } 
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
          }
-      </style>`
-        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="photo-image">
+            <img class="photo-image" src="https://avatars0.githubusercontent.com/u/34906126?s=400&u=64000af581a81dc347cece3e62384d9ed39ef9bf&v=4">
+        <h1>Hi!</h1>
+        <h2>My name is Ty Shivers</h2>
+        <ul id="profile">
+            <i class="fas fa-location-arrow"></i>
+                Los Angeles, CA</li>
+            <i class="fas fa-github-alt"></i>
+                <a href="https://github.com.tshivers">GitHub</a>
+            <i class="fas fa-rss"></i>
+                <a href="https://ty-shivers.com">Blog</a>
+        </ul>
+        </div>
+        </div>
+        <div class="container">
+            <h2>I am a Technical Operations Specialist at Walt Disney Television and a Part-Time Full Stack Web Development Student at UCLA Extension</h2>
+            <div class="row">
+                <div class="col-sm-card">
+                    <h3>Public Repositories</h3>
+                    <h4>16</h4>
+                </div>
+                <div class="col-sm-card">
+                        <h3>Followers</h3>
+                        <h4>0</h4>
+                </div>
+                <div class="col-sm-card">
+                        <h3>Following</h3>
+                        <h4>0</h4>
+                </div>
+                <div class="col-sm-card">
+                        <h3>GitHub Stars</h3>
+                        <h4>0</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>`;
+}
 
-        module.exports = {
-          generateHTML: generateHTML,
-          colors: colors,
-        }
+module.exports = {
+  generateHTML: generateHTML,
+  colors: colors,
+}
